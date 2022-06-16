@@ -10,6 +10,8 @@ body{
     background-image: url(../img/body1.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    /* position: relative; */
+    width: 100%;
 }
 header{
     width: 100%;
@@ -34,34 +36,90 @@ header ul li a:hover{
     background-color: #79B331;
 }
 .mtavari{
-    height: 150px;
-    width: 350px;
-    margin-left: 700px;
-    margin-top: 50px;
+    width: 432px;
+    padding: 40px;
+    height: 162px;
+    margin: 128px 734px;
+    text-align: center;
     position: relative;
 }
 .tsre{
-    width: 50px;
-    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
     background-color: #79B331;
     border-radius: 50%;
-    position: absolute;
-    animation: modzraoba 2s infinite;
+    animation: modzraoba 5s infinite;
+}
+.mtavari h2{
+    margin-top: 10px;
+    font-size: 36px;
+
 }
 .akcia{
-    position: absolute;
-    font-size: 14px;
-    margin: 40px 40px;
+    font-size: 18px;
 }
-.ricxvebi{
+
+.veganxe{
+    width: 900px;
+    height: 300px;
+    margin-left: 400px;
+    margin-top: 180px;
+    position: relative;
+}
+.ghero{
+    width: 1px;
+    height: 300px;
+    background-color: #C4C4C4;
+    margin: 0 auto;
+}
+.xeitem{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
-    margin: 70px 80px;
-    font-size: 36px;
+    top: -70px;
+    left: 0;
+}
+.xeitem:hover .xeitemtext{
+    color: #79B331;
+    cursor: pointer;
+}
+.xeitem:hover .fotoli{
+    background-color: #79B331;
+    cursor: pointer;
+}
+.xeitem p{
+    width: 370px;
+}
+.fotoli{
+    width: 70px;
+    height: 70px;
+    background-color: #C4C4C4;
+    border-radius: 0 35px 0 35px;
+}
+.marjvena{
+    transform: rotate(90deg);
 }
 @keyframes modzraoba {
     0% {top:0; left:0;}
-    25%{top:0; left: 300px;}
-    50%{top: 100px; left: 300px;}
-    75%{top: 100px; left: 0;}
+    25%{top:0; left: 400px;}
+    50%{top: 130px; left: 400px;}
+    75%{top: 130px; left: 0;}
     100%{top: 0; left: 0;}
+}
+.xeitem2{
+    top: 0;
+    left: 50%;
+}
+.xeitem3{
+    top: 70px;
+    left: 0;
+}
+.xeitem4{
+    top: 140px;
+    left: 50%;
 }
